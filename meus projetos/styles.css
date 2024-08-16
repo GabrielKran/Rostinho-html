@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.espaco {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado {
+    width: 272px;
+    height: 272px;
+    border: solid rgb(7, 7, 196) 8px;
+    transition: 0.2s;
+    transform-origin: center;
+}
+
+.olhos {
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 80px 0;
+}
+
+.olho_left, .olho_right {
+    width: 95px;
+    height: 10px;
+    background-color: rgb(45, 45, 45);
+    transition: 0.2s;
+    transform-origin: center;
+}
+
+.quadrado:hover {
+    transform: scale(1.1);
+}
+
+.quadrado:hover .olho_left, .quadrado:hover .olho_right {
+    transform: scaleY(10);
+}
